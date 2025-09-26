@@ -2,6 +2,11 @@ package String;
 
 public class maxPermutations {
 
+    // Q 5 COGNIZANT
+
+//    replace the all vowels and return the pemutations of
+//    the remaining string inthe array
+
     public static long factorial(int N){
         long fact = 1;
         for(int i=2; i<=N;i++){
