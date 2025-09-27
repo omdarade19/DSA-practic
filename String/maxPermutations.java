@@ -18,7 +18,7 @@ public class maxPermutations {
     public static long maxPermutations(String [] arr, int N){
         int maxLength=0;
         for(String s : arr){
-            String noVovels = s.replaceAll("(?i)[aeiou]","")
+            String noVovels = s.replaceAll("(?i)[aeiou]","");
 //            System.out.println(noVovels);
             maxLength= Math.max(maxLength,noVovels.length());
         }
@@ -32,7 +32,7 @@ public class maxPermutations {
     }
 
     public static void main(String[] args){
-        String [] arr={"eio"};
+        String [] arr={"darade"};
         int N = 1;
 
         System.out.println("the maxpermutations is :"+maxPermutations(arr,N));
