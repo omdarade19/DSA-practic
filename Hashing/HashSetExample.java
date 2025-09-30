@@ -1,6 +1,7 @@
 package Hashing;
 
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class HashSetExample {
 
@@ -23,5 +24,12 @@ public class HashSetExample {
         System.out.println("the size of the set is :"+ set.size());
 
         System.out.println(set);
+
+        // Iterator
+        Iterator it = set.iterator();
+
+        while (it.hasNext()){
+            System.out.println(it.next());
+        }
     }
 }
