@@ -23,7 +23,7 @@ public class insertionsofArrays {
     }
 
     public static void main(String[] args){
-        int arr[] = {7,4,3,2,9}, arr2[] = {6,3,9,7,4,2,9};
+        int arr[] = {7,3,9}, arr2[] = {6,3,9,7,4,2,9};
 
         int Ans=InsertionsofArrays(arr, arr2);
         System.out.println("the common Elements are :"+Ans);
