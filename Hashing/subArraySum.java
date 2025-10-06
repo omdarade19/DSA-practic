@@ -9,26 +9,29 @@ public class subArraySum {
         map.put(0, 1);
 
         int count = 0;
-        int prefixSum = 0;
+        int Sum = 0;
 
-        for (int num : nums) {
-            prefixSum += num;
+       for(int i=0; i<nums.length; i++){
 
+           Sum +=nums[i];
 
-            if (map.containsKey(prefixSum - k)) {
-                count += map.get(prefixSum - k);
-            }
+           if(map.containsKey(Sum-k)){
+               count += map.get(Sum -k);
+           }
 
-            // store/update prefix sum in map
-            map.put(prefixSum, map.getOrDefault(prefixSum, 0) + 1);
-        }
+           if(map.containsKey(Sum)){
+               map.put(Sum, map.get(Sum)+1);
+           }else{
+               map.put(Sum, 1);
+           }
+       }
 
         return count;
     }
 
     public static void main(String[] args){
-        int[] nums = {1, 2, 3};
-        int k = 3;
+        int[] nums = {10,-2,2,-20,10};
+        int k = -10;
         System.out.println("Number of subarrays with sum " + k + " = " + subarraySum(nums, k));
     }
 }
