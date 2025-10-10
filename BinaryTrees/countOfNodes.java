@@ -39,16 +39,16 @@ public class countOfNodes {
         return leftNode+rigthNode+1;
     }
 
-//    public static int sumOfNodes(Node root){
-//        if(root == null){
-//            return 0;
-//        }
-//
-//        int leftNodeSum = sumOfNodes(root.left);
-//        int rigthNodeSum = sumOfNodes(root.rigth);
-//
-//        return leftNodeSum+rigthNodeSum+root.data;
-//    }
+    public static int sumOfNodes(Node root){
+        if(root == null){
+            return 0;
+        }
+
+        int leftNodeSum = sumOfNodes(root.left);
+        int rigthNodeSum = sumOfNodes(root.rigth);
+
+        return leftNodeSum+rigthNodeSum+root.data;
+    }
 
     public static void main(String[] args) {
         int nodes[] = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
@@ -57,6 +57,6 @@ public class countOfNodes {
         Node root = tree.buildTree(nodes);
 
         System.out.println("the count of the nodes in tree is:-> "+countOfNode(root));
-//        System.out.println("the Sum of the nodes in tree is:-> "+sumOfNodes(root));
+        System.out.println("the Sum of the nodes in tree is:-> "+sumOfNodes(root));
     }
 }
