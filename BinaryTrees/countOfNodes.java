@@ -50,6 +50,19 @@ public class countOfNodes {
         return leftNodeSum+rigthNodeSum+root.data;
     }
 
+    public static int height(Node root){
+        if(root == null){
+            return 0;
+        }
+
+        int leftheight = height(root.left);
+        int rightheight = height(root.rigth);
+
+        int myHeight = Math.max(leftheight,rightheight)+1;
+
+        return myHeight;
+    }
+
     public static void main(String[] args) {
         int nodes[] = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
 
@@ -58,5 +71,6 @@ public class countOfNodes {
 
         System.out.println("the count of the nodes in tree is:-> "+countOfNode(root));
         System.out.println("the Sum of the nodes in tree is:-> "+sumOfNodes(root));
+        System.out.println("the Height of the tree is:-> "+height(root));
     }
 }
