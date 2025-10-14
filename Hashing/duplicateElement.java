@@ -2,6 +2,7 @@ package Hashing;
 
 import java.util.HashSet;
 
+//letcode 217
 public class duplicateElement {
     public static boolean checkDuplicate(int[] nums) {
 
