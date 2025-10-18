@@ -1,7 +1,7 @@
 package Arrays;
 
 public class removeDuplicate {
-
+//leetcode 26
     public static int remove(int nums[]){
 
         int k = 1;
