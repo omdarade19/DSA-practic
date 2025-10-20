@@ -2,6 +2,8 @@ package Hashing;
 import java.util.HashSet;
 public class insertionsofArrays {
 
+    //Leetcode 349
+
     public static int InsertionsofArrays(int[] arr, int[] arr2){
         int n= arr.length, m=arr2.length;
         int count =0;
