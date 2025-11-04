@@ -2,6 +2,7 @@ package Arrays;
 
 public class TwoSumII {
     //Leetcode 167
+    //leetcode
 
     //Given a 1-indexed array of integers numbers that is already sorted in
     // non-decreasing order, find two numbers such that they add up to a specific
@@ -29,7 +30,7 @@ public class TwoSumII {
 
     public static void main(String[] args) {
         int nums[] ={2,7,11,15};
-        int target = 9;
+        int target = 18;
         int ans[] =twoSum(nums,target);
 
         for(int num:ans){
