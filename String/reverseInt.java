@@ -38,9 +38,9 @@ public class reverseInt {
     }
 
     public static void main(String[] args) {
-        int x = -123;
+        int x = 999;
 
-        System.out.println("the number is ->"+x);
+        System.out.println("the number is -> "+x);
         System.out.println("the rev number is -> "+reverse(x));
     }
 }
