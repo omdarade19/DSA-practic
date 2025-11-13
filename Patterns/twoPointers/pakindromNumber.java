@@ -20,7 +20,7 @@ public class pakindromNumber {
     }
 
     public static void main(String[] args) {
-        int x = 121;
+        int x = 1111111;
 
         System.out.print("is this number is palindrom -> "+isPalindrome(x));
     }
