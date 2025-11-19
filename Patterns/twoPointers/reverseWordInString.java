@@ -4,6 +4,8 @@ public class reverseWordInString {
 
     public static String reversWords(String s){
 
+        //Approach 1
+
         String trim = s.trim();
 
         String[] arr = trim.split("\\s+");
@@ -18,6 +20,10 @@ public class reverseWordInString {
             i++;
             j--;
         }
+
+
+        // Approach 2
+
 
         return String.join(" ",arr);
     }
