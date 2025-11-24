@@ -54,10 +54,10 @@ public class twins_Node_Sum {
     public static void main(String[] args) {
 
         // Create linked list: 5 → 4 → 2 → 1
-        ListNode head = new ListNode(5);
-        head.next = new ListNode(4);
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(3);
         head.next.next = new ListNode(2);
-        head.next.next.next = new ListNode(1);
+        head.next.next.next = new ListNode(4);
 
         System.out.println(pairSum(head));  // Output: 6  (5+1 or 4+2)
     }
