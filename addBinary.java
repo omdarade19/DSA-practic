@@ -22,8 +22,8 @@ public class addBinary {
     }
 
     public static void main(String[] args) {
-        String a ="11";
-        String b ="1";
+        String a ="101";
+        String b ="11";
 
         System.out.print("the addition of two binary string is -> "+ addBinary(a,b));
     }
